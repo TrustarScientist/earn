@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth overflow-x-hidden">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EARN | Employers' Apprenticeship Resource Network</title>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lexend:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <script>
@@ -35,8 +38,10 @@
     </script>
 
     <style>
-        [x-cloak] { display: none !important; }
-        
+        [x-cloak] {
+            display: none !important;
+        }
+
         .glass-nav {
             background: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(12px);
@@ -45,8 +50,8 @@
 
         /* Mind-blowing Hero Background */
         .hero-bg {
-            background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.8)), 
-                        url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.8)),
+                url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -60,53 +65,81 @@
 
         /* Smooth Floating Animation */
         @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-            100% { transform: translateY(0px); }
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
         }
-        .animate-float { animation: float 4s ease-in-out infinite; }
+
+        .animate-float {
+            animation: float 4s ease-in-out infinite;
+        }
     </style>
 </head>
+
 <body class="font-sans text-slate-800 antialiased overflow-x-hidden bg-white" x-data="{ mobileMenuOpen: false }">
 
     <nav class="fixed w-full z-[100] glass-nav border-b border-slate-200/50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer group">
-                    <div class="w-10 h-10 bg-earn-primary rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg group-hover:rotate-12 transition-transform">E</div>
-                    <span class="font-display font-bold text-2xl text-slate-900 tracking-tight">EARN<span class="text-earn-primary">.Training</span></span>
+                    <div
+                        class="w-10 h-10 bg-earn-primary rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg group-hover:rotate-12 transition-transform">
+                        E</div>
+                    <span class="font-display font-bold text-2xl text-slate-900 tracking-tight">EARN<span
+                            class="text-earn-primary">.Training</span></span>
                 </div>
 
                 <div class="hidden md:flex space-x-10 items-center">
-                    <a href="#about" class="text-slate-600 hover:text-earn-primary font-semibold transition text-sm">About Us</a>
-                    <a href="#programs" class="text-slate-600 hover:text-earn-primary font-semibold transition text-sm">Programs</a>
-                    <a href="#impact" class="text-slate-600 hover:text-earn-primary font-semibold transition text-sm">Impact</a>
-                    <a href="#contact" class="px-6 py-2.5 rounded-full bg-earn-dark text-white font-bold text-sm hover:bg-earn-primary transition shadow-md hover:shadow-green-500/20 transform hover:-translate-y-0.5">Partner With Us</a>
+                    <a href="#about"
+                        class="text-slate-600 hover:text-earn-primary font-semibold transition text-sm">About Us</a>
+                    <a href="#programs"
+                        class="text-slate-600 hover:text-earn-primary font-semibold transition text-sm">Programs</a>
+                    <a href="#impact"
+                        class="text-slate-600 hover:text-earn-primary font-semibold transition text-sm">Impact</a>
+                    <a href="#contact"
+                        class="px-6 py-2.5 rounded-full bg-earn-dark text-white font-bold text-sm hover:bg-earn-primary transition shadow-md hover:shadow-green-500/20 transform hover:-translate-y-0.5">Partner
+                        With Us</a>
                 </div>
 
                 <div class="md:hidden flex items-center">
                     <button @click="mobileMenuOpen = !mobileMenuOpen" class="text-slate-900 p-2 focus:outline-none">
-                        <svg x-show="!mobileMenuOpen" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        <svg x-show="!mobileMenuOpen" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
-                        <svg x-show="mobileMenuOpen" x-cloak class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        <svg x-show="mobileMenuOpen" x-cloak class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </button>
                 </div>
             </div>
         </div>
-        
-        <div x-show="mobileMenuOpen" x-cloak 
-             class="md:hidden bg-white/95 backdrop-blur-xl border-t border-slate-100 absolute w-full shadow-2xl"
-             x-transition:enter="transition ease-out duration-200"
-             x-transition:enter-start="opacity-0 -translate-y-4"
-             x-transition:enter-end="opacity-100 translate-y-0">
+
+        <div x-show="mobileMenuOpen" x-cloak
+            class="md:hidden bg-white/95 backdrop-blur-xl border-t border-slate-100 absolute w-full shadow-2xl"
+            x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 -translate-y-4"
+            x-transition:enter-end="opacity-100 translate-y-0">
             <div class="px-4 pt-4 pb-8 space-y-2">
-                <a href="#about" @click="mobileMenuOpen = false" class="block p-4 text-slate-700 font-bold border-b border-slate-50">About Us</a>
-                <a href="#programs" @click="mobileMenuOpen = false" class="block p-4 text-slate-700 font-bold border-b border-slate-50">Programs</a>
-                <a href="#impact" @click="mobileMenuOpen = false" class="block p-4 text-slate-700 font-bold border-b border-slate-50">Impact</a>
-                <a href="#contact" @click="mobileMenuOpen = false" class="block w-full text-center mt-4 px-5 py-4 rounded-xl bg-earn-primary text-white font-bold">Partner With Us</a>
+                <a href="#about" @click="mobileMenuOpen = false"
+                    class="block p-4 text-slate-700 font-bold border-b border-slate-50">About Us</a>
+                <a href="#programs" @click="mobileMenuOpen = false"
+                    class="block p-4 text-slate-700 font-bold border-b border-slate-50">Programs</a>
+                <a href="#impact" @click="mobileMenuOpen = false"
+                    class="block p-4 text-slate-700 font-bold border-b border-slate-50">Impact</a>
+                <a href="#contact" @click="mobileMenuOpen = false"
+                    class="block w-full text-center mt-4 px-5 py-4 rounded-xl bg-earn-primary text-white font-bold">Partner
+                    With Us</a>
             </div>
         </div>
     </nav>
@@ -115,132 +148,709 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <div class="text-left">
-                    <div class="inline-flex items-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-bold uppercase tracking-widest mb-8 animate-pulse" data-aos="fade-right">
+                    <div class="inline-flex items-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-bold uppercase tracking-widest mb-8 animate-pulse"
+                        data-aos="fade-right">
                         Nigeria's Premier Apprenticeship Alliance
                     </div>
-                    <h1 class="text-5xl md:text-7xl font-display font-extrabold text-white leading-[1.1] mb-8" data-aos="fade-up" data-aos-delay="100">
+                    <h1 class="text-5xl md:text-7xl font-display font-extrabold text-white leading-[1.1] mb-8"
+                        data-aos="fade-up" data-aos-delay="100">
                         Bridge the Gap. <br>
                         <span class="text-gradient">Build Nigeria's Future.</span>
                     </h1>
-                    <p class="text-lg md:text-xl text-slate-300 mb-10 leading-relaxed max-w-xl" data-aos="fade-up" data-aos-delay="200">
-                        The Employers' Apprenticeship Resource Network (EARN) is an operational alliance founded by industry leaders to deliver structured, employer-driven apprenticeships that create a direct pipeline of job-ready professionals and fuel economic growth.
+                    <p class="text-lg md:text-xl text-slate-300 mb-10 leading-relaxed max-w-xl" data-aos="fade-up"
+                        data-aos-delay="200">
+                        The Employers' Apprenticeship Resource Network (EARN) is an operational alliance founded by
+                        industry leaders to deliver structured, employer-driven apprenticeships that create a direct
+                        pipeline of job-ready professionals and fuel economic growth.
                     </p>
                     <div class="flex flex-wrap gap-5" data-aos="fade-up" data-aos-delay="300">
-                        <a href="#programs" class="px-10 py-5 rounded-full bg-earn-primary text-white font-bold text-lg hover:bg-green-600 transition shadow-2xl hover:shadow-green-500/40 transform hover:-translate-y-1">
+                        <a href="#programs"
+                            class="px-10 py-5 rounded-full bg-earn-primary text-white font-bold text-lg hover:bg-green-600 transition shadow-2xl hover:shadow-green-500/40 transform hover:-translate-y-1">
                             Explore Our Programs
                         </a>
-                        <a href="#contact" class="px-10 py-5 rounded-full bg-white/10 backdrop-blur-md border border-white/30 text-white font-bold text-lg hover:bg-white/20 transition">
+                        <a href="#contact"
+                            class="px-10 py-5 rounded-full bg-white/10 backdrop-blur-md border border-white/30 text-white font-bold text-lg hover:bg-white/20 transition">
                             Partner With Us
                         </a>
                     </div>
                 </div>
                 <div class="hidden lg:block relative" data-aos="zoom-in" data-aos-delay="400">
                     <div class="relative z-10 animate-float">
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Professional Work" class="rounded-3xl shadow-2xl border-4 border-white/10">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Professional Work" class="rounded-3xl shadow-2xl border-4 border-white/10">
                     </div>
-                    <div class="absolute -top-10 -right-10 w-40 h-40 bg-earn-accent rounded-full mix-blend-screen filter blur-3xl opacity-30 animate-pulse"></div>
-                    <div class="absolute -bottom-10 -left-10 w-64 h-64 bg-earn-primary rounded-full mix-blend-screen filter blur-3xl opacity-20"></div>
+                    <div
+                        class="absolute -top-10 -right-10 w-40 h-40 bg-earn-accent rounded-full mix-blend-screen filter blur-3xl opacity-30 animate-pulse">
+                    </div>
+                    <div
+                        class="absolute -bottom-10 -left-10 w-64 h-64 bg-earn-primary rounded-full mix-blend-screen filter blur-3xl opacity-20">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-24 bg-white relative">
+    <!-- <section class="py-24 bg-white relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl transition-all group" data-aos="fade-up">
-                    <div class="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 text-earn-primary group-hover:bg-earn-primary group-hover:text-white transition-colors">
-                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"/></svg>
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl transition-all group"
+                    data-aos="fade-up">
+                    <div
+                        class="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 text-earn-primary group-hover:bg-earn-primary group-hover:text-white transition-colors">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
+                        </svg>
                     </div>
                     <h3 class="font-display font-bold text-xl mb-4">Industry-Led Design</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed">Employers co-create every curriculum with us, ensuring training solves real operational gaps and delivers immediate ROI.</p>
+                    <p class="text-sm text-slate-600 leading-relaxed">Employers co-create every curriculum with us,
+                        ensuring training solves real operational gaps and delivers immediate ROI.</p>
                 </div>
-                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl transition-all group" data-aos="fade-up" data-aos-delay="100">
-                    <div class="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 text-earn-primary group-hover:bg-earn-primary group-hover:text-white transition-colors">
-                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl transition-all group"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 text-earn-primary group-hover:bg-earn-primary group-hover:text-white transition-colors">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
                     </div>
                     <h3 class="font-display font-bold text-xl mb-4">Learn & Earn Model</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed">Apprentices gain certified skills while contributing value on the job, increasing retention and relevance.</p>
+                    <p class="text-sm text-slate-600 leading-relaxed">Apprentices gain certified skills while
+                        contributing value on the job, increasing retention and relevance.</p>
                 </div>
-                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl transition-all group" data-aos="fade-up" data-aos-delay="200">
-                    <div class="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 text-earn-primary group-hover:bg-earn-primary group-hover:text-white transition-colors">
-                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl transition-all group"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 text-earn-primary group-hover:bg-earn-primary group-hover:text-white transition-colors">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
                     </div>
                     <h3 class="font-display font-bold text-xl mb-4">Holistic Support</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed">We provide end-to-end management—from financial aid and mentorship to job matching and policy alignment.</p>
+                    <p class="text-sm text-slate-600 leading-relaxed">We provide end-to-end management—from financial
+                        aid and mentorship to job matching and policy alignment.</p>
                 </div>
-                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl transition-all group" data-aos="fade-up" data-aos-delay="300">
-                    <div class="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 text-earn-primary group-hover:bg-earn-primary group-hover:text-white transition-colors">
-                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl transition-all group"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <div
+                        class="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 text-earn-primary group-hover:bg-earn-primary group-hover:text-white transition-colors">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                        </svg>
                     </div>
                     <h3 class="font-display font-bold text-xl mb-4">Formal Certification</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed">Graduates earn credentials co-branded with industry partners, TVET institutions and aligned with national & international standards.</p>
+                    <p class="text-sm text-slate-600 leading-relaxed">Graduates earn credentials co-branded with
+                        industry partners, TVET institutions and aligned with national & international standards.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+    <section class="py-24 bg-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" stroke-width="1" />
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid)" />
+            </svg>
+        </div>
+    
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-earn-primary font-extrabold uppercase tracking-[0.2em] text-xs block mb-3">Our
+                    Foundation</span>
+                <h2 class="text-4xl md:text-5xl font-display font-bold text-slate-900 mb-6">The EARN Key Pillars</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto text-lg">A closed-loop ecosystem designed to bridge the gap
+                    between education and high-impact industry placement.</p>
+                <div class="mt-8 flex justify-center gap-1">
+                    <div class="w-12 h-1.5 bg-earn-primary rounded-full"></div>
+                    <div class="w-4 h-1.5 bg-earn-accent rounded-full"></div>
+                    <div class="w-4 h-1.5 bg-slate-200 rounded-full"></div>
+                </div>
+            </div>
+    
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="group relative p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-[0_20px_50px_rgba(22,163,74,0.1)] transition-all duration-500 overflow-hidden"
+                    data-aos="fade-up">
+                    <div
+                        class="absolute top-0 right-0 w-24 h-24 bg-earn-primary/5 rounded-bl-full translate-x-8 -translate-y-8 group-hover:translate-x-4 group-hover:-translate-y-4 transition-transform duration-500">
+                    </div>
+    
+                    <div class="relative z-10">
+                        <div
+                            class="w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-8 text-earn-primary group-hover:scale-110 group-hover:bg-earn-primary group-hover:text-white transition-all duration-500">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-slate-900 mb-4">Industry-Led Design</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Employers co-create every curriculum with us,
+                            ensuring training solves real operational gaps and delivers immediate ROI.</p>
+                    </div>
+                </div>
+    
+                <div class="group relative p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-[0_20px_50px_rgba(22,163,74,0.1)] transition-all duration-500 overflow-hidden"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="absolute top-0 right-0 w-24 h-24 bg-earn-accent/5 rounded-bl-full translate-x-8 -translate-y-8 group-hover:translate-x-4 group-hover:-translate-y-4 transition-transform duration-500">
+                    </div>
+    
+                    <div class="relative z-10">
+                        <div
+                            class="w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-8 text-earn-primary group-hover:scale-110 group-hover:bg-earn-primary group-hover:text-white transition-all duration-500">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-slate-900 mb-4">Learn & Earn Model</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Apprentices gain certified skills while
+                            contributing value on the job, increasing retention and relevance.</p>
+                    </div>
+                </div>
+    
+                <div class="group relative p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-[0_20px_50px_rgba(22,163,74,0.1)] transition-all duration-500 overflow-hidden"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="absolute top-0 right-0 w-24 h-24 bg-blue-500/5 rounded-bl-full translate-x-8 -translate-y-8 group-hover:translate-x-4 group-hover:-translate-y-4 transition-transform duration-500">
+                    </div>
+    
+                    <div class="relative z-10">
+                        <div
+                            class="w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-8 text-earn-primary group-hover:scale-110 group-hover:bg-earn-primary group-hover:text-white transition-all duration-500">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-slate-900 mb-4">Holistic Support</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">We provide end-to-end management—from financial
+                            aid and mentorship to job matching and policy alignment.</p>
+                    </div>
+                </div>
+    
+                <div class="group relative p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-[0_20px_50px_rgba(22,163,74,0.1)] transition-all duration-500 overflow-hidden"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <div
+                        class="absolute top-0 right-0 w-24 h-24 bg-earn-primary/5 rounded-bl-full translate-x-8 -translate-y-8 group-hover:translate-x-4 group-hover:-translate-y-4 transition-transform duration-500">
+                    </div>
+    
+                    <div class="relative z-10">
+                        <div
+                            class="w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-8 text-earn-primary group-hover:scale-110 group-hover:bg-earn-primary group-hover:text-white transition-all duration-500">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-slate-900 mb-4">Formal Certification</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Graduates earn credentials co-branded with
+                            industry partners, TVET institutions and aligned with national & international standards.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="py-24 bg-earn-light">
+
+    <section id="about" class="py-24 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+    
+                <div class="lg:w-1/2 relative" data-aos="fade-right">
+                    <div
+                        class="relative z-10 rounded-3xl overflow-hidden shadow-2xl transform -rotate-2 hover:rotate-0 transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Team Collaboration" class="w-full h-[500px] object-cover">
+                    </div>
+                    <div
+                        class="absolute -bottom-6 -right-6 w-full h-full bg-earn-primary rounded-3xl -z-10 transform rotate-3 opacity-10">
+                    </div>
+                    <div
+                        class="absolute top-1/2 -left-12 transform -translate-y-1/2 w-48 h-48 bg-earn-accent/20 rounded-full filter blur-3xl -z-10 animate-pulse">
+                    </div>
+    
+                    <div class="absolute bottom-10 -right-8 bg-white p-6 rounded-2xl shadow-xl z-20 border border-slate-100 hidden md:block"
+                        data-aos="zoom-in" data-aos-delay="400">
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 bg-earn-primary/10 rounded-full flex items-center justify-center text-earn-primary">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 font-bold uppercase tracking-wider">Operational Alliance
+                                </p>
+                                <p class="text-xl font-display font-bold text-slate-900">Industry Architects</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="lg:w-1/2" data-aos="fade-left">
+                    <div
+                        class="inline-block px-4 py-1 rounded-full bg-earn-primary/10 text-earn-primary text-xs font-bold uppercase tracking-widest mb-6">
+                        Why EARN exists?
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-display font-extrabold text-slate-900 mb-8 leading-tight">
+                        About <span class="text-earn-primary">Us</span>
+                    </h2>
+                    <div class="space-y-6 text-slate-600 text-lg leading-relaxed">
+                        <p>
+                            EARN is the Employers' Apprenticeship Resource Network—a definitive, private-sector-led solution to Africa’s skills
+                            challenge, launching first in Nigeria. We are an active, operational alliance of industry architects, founded by <span class="text-earn-primary">M8
+                            Global KNOW Network, Industry Qualifications Ltd (IQ), and leading commercial banks </span>. Our consortium is built on a
+                            powerful premise: that employers, in partnership with relevant government agencies and development partners, must
+                            co-create the future workforce.
+                        </p>
+                        <p>
+
+                        </p>
+
+                        <a href="about.html"
+                            class="group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-gradient-to-r from-emerald-500 to-green-600 px-8 py-3 font-medium text-white transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-emerald-200 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2">
+                            <span class="mr-2">Read More</span>
+                            <svg class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </a>
+
+            
+                        <p class="text-sm border-l-4 border-earn-primary pl-6 py-2 italic bg-slate-50 rounded-r-xl">
+                        Building Nigeria's workforce, through partnership.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-24 bg-earn-dark relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-20 pointer-events-none">
+            <div class="absolute -top-24 -right-24 w-96 h-96 bg-earn-primary rounded-full filter blur-[120px]"></div>
+            <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-earn-accent rounded-full filter blur-[120px]"></div>
+        </div>
+    
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-20" data-aos="fade-up">
+                <h2 class="text-earn-accent font-display font-bold text-4xl mb-6">Our Mission</h2>
+                <div class="max-w-4xl mx-auto">
+                    <p class="text-2xl md:text-3xl text-white font-light leading-relaxed">
+                        EARN is a private-sector-led solution to <span class="text-earn-primary font-bold"> Nigeria's skills challenge</span>. We partner directly with forward-thinking
+                        companies, relevant government agencies, and development partners to design, fund, and deliver targeted apprenticeship
+                        programs.
+                        
+                    </p>
+                    <p class="mt-8 text-earn-primary font-display font-bold text-xl uppercase tracking-widest">
+                        Our mission is three-fold:</p>
+                </div>
+            </div>
+    
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div class="p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors group"
+                    data-aos="zoom-in" data-aos-delay="100">
+                    <div class="text-earn-accent text-3xl font-display font-bold mb-4 italic">01.</div>
+                    <h4 class="text-white font-bold text-xl mb-3">For Businesses</h4>
+                    <p class="text-slate-400 text-sm">to provide businesses with a loyal, skilled talent pipeline</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors group"
+                    data-aos="zoom-in" data-aos-delay="200">
+                    <div class="text-earn-accent text-3xl font-display font-bold mb-4 italic">02.</div>
+                    <h4 class="text-white font-bold text-xl mb-3">For Youth</h4>
+                    <p class="text-slate-400 text-sm">to equip Nigerian youth with recognized pathways to prosperity</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors group"
+                    data-aos="zoom-in" data-aos-delay="300">
+                    <div class="text-earn-accent text-3xl font-display font-bold mb-4 italic">03.</div>
+                    <h4 class="text-white font-bold text-xl mb-3">For Nations</h4>
+                    <p class="text-slate-400 text-sm">to support national workforce development goals. </p>
+                </div>
+            </div>
+            <p class="mt-8 text-earn-primary font-display font-bold text-xl uppercase tracking-widest text-center mb-0">
+                We turn potential into productivity.</p>
+        </div>
+    </section>
+    
+    <section class="py-24 bg-slate-50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-16 items-start">
+                <div class="lg:w-1/3 sticky top-32">
+                    <span class="text-earn-primary font-extrabold uppercase tracking-widest text-xs mb-4 block">How We
+                        Work</span>
+                    <h2 class="text-4xl font-display font-bold text-slate-900 mb-6">Our Operational Model</h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        The EARN model is a closed-loop system built on partnership. It moves through a rigorous cycle to
+                        ensure the result is a competent graduate and a refined curriculum.
+                    </p>
+                    <div class="mt-10">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Technical Training"
+                            class="rounded-2xl shadow-lg opacity-80 grayscale hover:grayscale-0 transition duration-500">
+                    </div>
+                </div>
+    
+                <div class="lg:w-2/3 space-y-12">
+                    <div class="flex gap-8 group" data-aos="fade-up">
+                        <div
+                            class="flex-shrink-0 w-16 h-16 rounded-full bg-white border-4 border-earn-primary flex items-center justify-center text-earn-primary font-display font-bold text-2xl group-hover:bg-earn-primary group-hover:text-white transition-all">
+                            1</div>
+                        <div class="pt-2">
+                            <h4 class="text-xl font-bold text-slate-900 mb-2">Deep Needs Analysis</h4>
+                            <p class="text-slate-600">It begins with a deep analysis of an employer's talent shortages to
+                                identify exact skill gaps within operations.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-8 group" data-aos="fade-up" data-aos-delay="100">
+                        <div
+                            class="flex-shrink-0 w-16 h-16 rounded-full bg-white border-4 border-earn-primary flex items-center justify-center text-earn-primary font-display font-bold text-2xl group-hover:bg-earn-primary group-hover:text-white transition-all">
+                            2</div>
+                        <div class="pt-2">
+                            <h4 class="text-xl font-bold text-slate-900 mb-2">Hybrid Training Design</h4>
+                            <p class="text-slate-600">We collaboratively build a hybrid training program, blending essential
+                                theory with applied, on-the-job practice.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-8 group" data-aos="fade-up" data-aos-delay="200">
+                        <div
+                            class="flex-shrink-0 w-16 h-16 rounded-full bg-white border-4 border-earn-primary flex items-center justify-center text-earn-primary font-display font-bold text-2xl group-hover:bg-earn-primary group-hover:text-white transition-all">
+                            3</div>
+                        <div class="pt-2">
+                            <h4 class="text-xl font-bold text-slate-900 mb-2">Supported Implementation</h4>
+                            <p class="text-slate-600">Throughout, we administer financial support, dual-track mentorship,
+                                and robust progress tracking for every apprentice.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-8 group" data-aos="fade-up" data-aos-delay="300">
+                        <div
+                            class="flex-shrink-0 w-16 h-16 rounded-full bg-white border-4 border-earn-primary flex items-center justify-center text-earn-primary font-display font-bold text-2xl group-hover:bg-earn-primary group-hover:text-white transition-all">
+                            4</div>
+                        <div class="pt-2">
+                            <h4 class="text-xl font-bold text-slate-900 mb-2">Direct Deployment</h4>
+                            <p class="text-slate-600">The result is a competent graduate, often hired directly by the
+                                partner, and a refined curriculum that grows smarter with each cohort.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- <section id="about" class="py-24 bg-earn-light">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col lg:flex-row gap-16 items-center">
                 <div class="lg:w-1/2" data-aos="fade-right">
-                    <span class="text-earn-primary font-extrabold uppercase tracking-widest text-sm block mb-4">Transforming Talent</span>
+                    <span
+                        class="text-earn-primary font-extrabold uppercase tracking-widest text-sm block mb-4">Transforming
+                        Talent</span>
                     <h2 class="text-4xl font-display font-bold text-slate-900 mb-8 leading-tight">About EARN</h2>
                     <div class="space-y-6 text-slate-600 leading-relaxed">
-                        <p>EARN is the Employers' Apprenticeship Resource Network—a definitive, private-sector-led solution to Africa’s skills challenge, launching first in Nigeria. We are an active, operational alliance of industry architects, founded by M8 Global KNOW Network, Industry Qualifications Ltd (IQ), and leading commercial banks.</p>
-                        <p>Traditional education-to-employment pipelines are fractured. EARN fixes this by providing a turnkey platform where businesses co-design, fund, and implement apprenticeship programs that deliver exact skill sets into their operations. We move beyond dialogue to deployment, merging the rigorous standards of international accreditation (IQ) with the practical agility of industry and the financial engineering of commercial banking.</p>
+                        <p>EARN is the Employers' Apprenticeship Resource Network—a definitive, private-sector-led
+                            solution to Africa’s skills challenge, launching first in Nigeria. We are an active,
+                            operational alliance of industry architects, founded by M8 Global KNOW Network, Industry
+                            Qualifications Ltd (IQ), and leading commercial banks.</p>
+                        <p>Traditional education-to-employment pipelines are fractured. EARN fixes this by providing a
+                            turnkey platform where businesses co-design, fund, and implement apprenticeship programs
+                            that deliver exact skill sets into their operations. We move beyond dialogue to deployment,
+                            merging the rigorous standards of international accreditation (IQ) with the practical
+                            agility of industry and the financial engineering of commercial banking.</p>
                     </div>
                 </div>
                 <div class="lg:w-1/2 relative" data-aos="fade-left">
                     <div class="p-10 bg-white rounded-3xl shadow-2xl relative z-10">
                         <h4 class="text-earn-primary font-bold mb-4">Our Mission</h4>
-                        <p class="text-slate-600 italic">"EARN is a private-sector-led solution to Nigeria's skills challenge. Our mission is three-fold: to provide businesses with a loyal, skilled talent pipeline; to equip Nigerian youth with recognized pathways to prosperity; and to support national workforce development goals. We turn potential into productivity."</p>
+                        <p class="text-slate-600 italic">"EARN is a private-sector-led solution to Nigeria's skills
+                            challenge. Our mission is three-fold: to provide businesses with a loyal, skilled talent
+                            pipeline; to equip Nigerian youth with recognized pathways to prosperity; and to support
+                            national workforce development goals. We turn potential into productivity."</p>
                     </div>
                     <div class="absolute -top-6 -left-6 w-full h-full bg-earn-primary/10 rounded-3xl -z-0"></div>
                 </div>
             </div>
         </div>
+    </section> -->
+
+    <section id="programs" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                <div class="max-w-2xl" data-aos="fade-right">
+                    <span class="text-earn-primary font-extrabold uppercase tracking-widest text-xs mb-4 block">Our
+                        Ecosystem</span>
+                    <h2 class="text-4xl md:text-5xl font-display font-bold text-slate-900 mb-6">Comprehensive Workforce
+                        Solutions</h2>
+                    <p class="text-slate-600 text-lg">
+                        EARN delivers a complete ecosystem of services designed to build talent from recruitment to retention and beyond. Our
+                        programs are live, tested, and driving measurable results for partners across Africa.
+                    </p>
+                </div>
+                <div data-aos="fade-left">
+                    <a href="services.html"
+                        class="inline-flex items-center gap-2 group text-earn-primary font-bold text-lg">
+                        View All Programs & Services
+                        <svg class="w-5 h-5 group-hover:translate-x-2 transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="grid md:grid-cols-3 gap-6">
+    
+                <div class="md:col-span-2 group relative overflow-hidden rounded-3xl bg-slate-900 min-h-[400px] flex flex-col justify-end p-10"
+                    data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                        alt="Apprenticeship Training"
+                        class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/20 to-transparent"></div>
+                    <div class="relative z-10">
+                        <div
+                            class="mb-4 inline-block px-3 py-1 rounded-md bg-earn-primary text-white text-[10px] font-bold uppercase tracking-widest">
+                            Flagship Program</div>
+                        <h3 class="text-3xl font-display font-bold text-white mb-4">Apprenticeship Training</h3>
+                        <p class="text-slate-300 max-w-md mb-6">
+                            We architect and manage industry-tailored apprenticeship programs that combine structured learning with productive work.
+                        </p>
+                        <!-- <a href="about.html"
+                            class="text-white font-bold border-b-2 border-earn-primary pb-1 hover:text-earn-accent transition-colors">Read
+                            More</a> -->
+                    </div>
+                </div>
+    
+                <div class="group p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-2xl transition-all"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <!-- <div
+                        class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-6 text-earn-primary group-hover:bg-earn-primary group-hover:text-white transition-all">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div> -->
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">Financial Aid & Incentive Management</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Our dedicated financial engineering team facilitates access to learning.</p>
+                    <!-- <a href="about.html" class="text-earn-primary font-bold text-sm hover:underline">Read
+                        More →</a> -->
+                </div>
+    
+                <div class="group p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-2xl transition-all"
+                    data-aos="fade-up">
+                    <!-- <div
+                        class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-6 text-earn-primary group-hover:bg-earn-primary group-hover:text-white transition-all">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    </div> -->
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">Structured Mentorship</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">We implement a dual-track mentorship framework embedded within every apprenticeship.</p>
+                    <!-- <a href="about.html" class="text-earn-primary font-bold text-sm hover:underline">Read
+                        More →</a> -->
+                </div>
+    
+                <div class="group p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-2xl transition-all"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <!-- <div
+                        class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-6 text-earn-primary group-hover:bg-earn-primary group-hover:text-white transition-all">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138z" />
+                        </svg>
+                    </div> -->
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">Recognized Certification</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">EARN, in partnership with accredited TVET institutions, universities, etc. issues formal certifications that validate
+                    skill mastery.</p>
+                    <!-- <a href="about.html"
+                        class="text-earn-primary font-bold text-sm hover:underline">Read More →</a> -->
+                </div>
+
+                <div class="group p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-2xl transition-all"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <!-- <div
+                                        class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-6 text-earn-primary group-hover:bg-earn-primary group-hover:text-white transition-all">
+                                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138z" />
+                                        </svg>
+                                    </div> -->
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">Career Support & Job Matching</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Our post-training engagement ensures successful transitions. We provide apprentices with career coaching, CV workshops,
+                    and interview simulation.</p>
+                    <!-- <a href="about.html"
+                                        class="text-earn-primary font-bold text-sm hover:underline">Read More →</a> -->
+                </div>
+
+                <div class="group p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-2xl transition-all"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <!-- <div
+                                                        class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-6 text-earn-primary group-hover:bg-earn-primary group-hover:text-white transition-all">
+                                                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                                                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138z" />
+                                                        </svg>
+                                                    </div> -->
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">Non-Formal Education Pathways</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">We specialize in recognizing and upskilling talent within the informal sector. Through our Recognition of Prior Learning
+                    (RPL) assessment, we credential existing skills in trades like carpentry or tailoring</p>
+                    <!-- <a href="about.html"
+                                                        class="text-earn-primary font-bold text-sm hover:underline">Read More →</a> -->
+                </div>
+
+                <div class="group p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-2xl transition-all"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <!-- <div
+                                                                        class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-6 text-earn-primary group-hover:bg-earn-primary group-hover:text-white transition-all">
+                                                                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                                                                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138z" />
+                                                                        </svg>
+                                                                    </div> -->
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">Industry Linkage & Advisory</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">EARN actively facilitates deep connections between the worlds of work and training. We organize regular employer
+                    advisory panels to keep curriculum dynamically aligned with market shifts.</p>
+                    <!-- <a href="about.html"
+                                                                        class="text-earn-primary font-bold text-sm hover:underline">Read More →</a> -->
+                </div>
+
+                <div class="group p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-2xl transition-all"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <!-- <div
+                                                class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-6 text-earn-primary group-hover:bg-earn-primary group-hover:text-white transition-all">
+                                                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                                        d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138z" />
+                                                </svg>
+                                            </div> -->
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">Monitoring, Evaluation & Learning (MEL)</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Our robust MEL system provides transparency and drives continuous improvement.</p>
+                    <!-- <a href="about.html"
+                                                                                        class="text-earn-primary font-bold text-sm hover:underline">Read More →</a> -->
+                </div>
+
+                <div class="group p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-2xl transition-all"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <!-- <div
+                                                class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-6 text-earn-primary group-hover:bg-earn-primary group-hover:text-white transition-all">
+                                                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                                        d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138z" />
+                                                </svg>
+                                            </div> -->
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">Entrepreneurship Training & Incubation</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">For apprentices inclined toward venture creation, we provide a clear runway.</p>
+                    <!-- <a href="about.html"
+                                                                                                        class="text-earn-primary font-bold text-sm hover:underline">Read More →</a> -->
+                </div>
+    
+                <div class="group p-8 rounded-3xl bg-earn-primary text-white shadow-xl hover:shadow-green-500/20 transition-all"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <!-- <div
+                        class="w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center mb-6 text-white group-hover:rotate-12 transition-transform">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-7h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                        </svg>
+                    </div> -->
+                    <h3 class="text-xl font-bold mb-4">Policy Design & Advisory</h3>
+                    <p class="text-white/80 text-sm leading-relaxed mb-6">Leveraging our collaboration with NBTE to shape
+                        national TVET frameworks and apprenticeship-friendly regulations.</p>
+                    <a href="services.html"
+                        class="text-earn-accent font-bold text-sm hover:text-white transition-colors">Read More →</a>
+                </div>
+
+                
+    
+            </div>
+    
+            <div class="mt-20 text-center" data-aos="zoom-in">
+                <div
+                    class="bg-slate-50 rounded-[40px] p-12 border border-slate-100 flex flex-col md:flex-row items-center justify-between gap-8">
+                    <div class="text-left">
+                        <h4 class="text-2xl font-display font-bold text-slate-900 mb-2">Ready to deploy a solution?</h4>
+                        <p class="text-slate-500">Discover all of our specialized programs and technical services.</p>
+                    </div>
+                    <a href="services.html"
+                        class="px-8 py-4 bg-earn-dark text-white rounded-full font-bold hover:bg-earn-primary transition-all shadow-lg">
+                        Explore Full Services Portfolio
+                    </a>
+                </div>
+            </div>
+    
+        </div>
     </section>
 
-    <section id="programs" class="py-24 bg-white">
+    <!-- <section id="programs" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
             <h2 class="text-4xl font-display font-bold mb-4">Comprehensive Workforce Solutions</h2>
-            <p class="text-slate-500 max-w-2xl mx-auto">EARN delivers a complete ecosystem of services designed to build talent from recruitment to retention and beyond.</p>
+            <p class="text-slate-500 max-w-2xl mx-auto">EARN delivers a complete ecosystem of services designed to build
+                talent from recruitment to retention and beyond.</p>
         </div>
-        
+
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:bg-white hover:shadow-2xl transition-all duration-300" data-aos="fade-up">
-                <span class="w-10 h-10 bg-earn-primary/10 text-earn-primary rounded-lg flex items-center justify-center font-bold mb-6">01</span>
+            <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:bg-white hover:shadow-2xl transition-all duration-300"
+                data-aos="fade-up">
+                <span
+                    class="w-10 h-10 bg-earn-primary/10 text-earn-primary rounded-lg flex items-center justify-center font-bold mb-6">01</span>
                 <h3 class="font-bold text-xl mb-4">Apprenticeship Training</h3>
-                <p class="text-sm text-slate-600 leading-relaxed">We architect industry-tailored programs in high-demand fields like renewable energy, ICT, and advanced manufacturing.</p>
+                <p class="text-sm text-slate-600 leading-relaxed">We architect industry-tailored programs in high-demand
+                    fields like renewable energy, ICT, and advanced manufacturing.</p>
             </div>
-            <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:bg-white hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="50">
-                <span class="w-10 h-10 bg-earn-primary/10 text-earn-primary rounded-lg flex items-center justify-center font-bold mb-6">02</span>
+            <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:bg-white hover:shadow-2xl transition-all duration-300"
+                data-aos="fade-up" data-aos-delay="50">
+                <span
+                    class="w-10 h-10 bg-earn-primary/10 text-earn-primary rounded-lg flex items-center justify-center font-bold mb-6">02</span>
                 <h3 class="font-bold text-xl mb-4">Financial Aid & Incentives</h3>
-                <p class="text-sm text-slate-600 leading-relaxed">Administering scholarships and vetting low-interest loan products through partners like Sterling Bank.</p>
+                <p class="text-sm text-slate-600 leading-relaxed">Administering scholarships and vetting low-interest
+                    loan products through partners like Sterling Bank.</p>
             </div>
-            <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:bg-white hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
-                <span class="w-10 h-10 bg-earn-primary/10 text-earn-primary rounded-lg flex items-center justify-center font-bold mb-6">03</span>
+            <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:bg-white hover:shadow-2xl transition-all duration-300"
+                data-aos="fade-up" data-aos-delay="100">
+                <span
+                    class="w-10 h-10 bg-earn-primary/10 text-earn-primary rounded-lg flex items-center justify-center font-bold mb-6">03</span>
                 <h3 class="font-bold text-xl mb-4">Structured Mentorship</h3>
-                <p class="text-sm text-slate-600 leading-relaxed">Dual-track frameworks Pairing apprentices with industry experts and professional coaches.</p>
+                <p class="text-sm text-slate-600 leading-relaxed">Dual-track frameworks Pairing apprentices with
+                    industry experts and professional coaches.</p>
             </div>
-            <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:bg-white hover:shadow-2xl transition-all duration-300" data-aos="fade-up">
-                <span class="w-10 h-10 bg-earn-primary/10 text-earn-primary rounded-lg flex items-center justify-center font-bold mb-6">04</span>
+            <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:bg-white hover:shadow-2xl transition-all duration-300"
+                data-aos="fade-up">
+                <span
+                    class="w-10 h-10 bg-earn-primary/10 text-earn-primary rounded-lg flex items-center justify-center font-bold mb-6">04</span>
                 <h3 class="font-bold text-xl mb-4">Recognized Certification</h3>
-                <p class="text-sm text-slate-600 leading-relaxed">Formal, stackable credentials recognized by TVET institutions and international partners.</p>
+                <p class="text-sm text-slate-600 leading-relaxed">Formal, stackable credentials recognized by TVET
+                    institutions and international partners.</p>
             </div>
-            <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:bg-white hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="50">
-                <span class="w-10 h-10 bg-earn-primary/10 text-earn-primary rounded-lg flex items-center justify-center font-bold mb-6">05</span>
+            <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:bg-white hover:shadow-2xl transition-all duration-300"
+                data-aos="fade-up" data-aos-delay="50">
+                <span
+                    class="w-10 h-10 bg-earn-primary/10 text-earn-primary rounded-lg flex items-center justify-center font-bold mb-6">05</span>
                 <h3 class="font-bold text-xl mb-4">Career & Job Matching</h3>
-                <p class="text-sm text-slate-600 leading-relaxed">Reducing hiring friction through our dynamic digital talent directory and alumni network.</p>
+                <p class="text-sm text-slate-600 leading-relaxed">Reducing hiring friction through our dynamic digital
+                    talent directory and alumni network.</p>
             </div>
-            <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:bg-white hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
-                <span class="w-10 h-10 bg-earn-primary/10 text-earn-primary rounded-lg flex items-center justify-center font-bold mb-6">06</span>
+            <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:bg-white hover:shadow-2xl transition-all duration-300"
+                data-aos="fade-up" data-aos-delay="100">
+                <span
+                    class="w-10 h-10 bg-earn-primary/10 text-earn-primary rounded-lg flex items-center justify-center font-bold mb-6">06</span>
                 <h3 class="font-bold text-xl mb-4">Informal Sector Pathways</h3>
-                <p class="text-sm text-slate-600 leading-relaxed">Recognition of Prior Learning (RPL) to upskill and formalize existing trade experience.</p>
+                <p class="text-sm text-slate-600 leading-relaxed">Recognition of Prior Learning (RPL) to upskill and
+                    formalize existing trade experience.</p>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section id="impact" class="py-24 bg-earn-dark text-white relative overflow-hidden">
         <div class="absolute inset-0 bg-earn-primary/5 pattern-grid opacity-20"></div>
@@ -249,15 +859,23 @@
             <div class="grid md:grid-cols-3 gap-10">
                 <div class="p-8 rounded-3xl bg-white/5 backdrop-blur-lg border border-white/10" data-aos="zoom-in">
                     <h3 class="text-earn-accent font-bold text-xl mb-4">For Employers</h3>
-                    <p class="text-slate-300 text-sm leading-relaxed mb-6">Solve critical skills shortages with a cost-effective solution. Access a pre-screened pool and strengthen your ESG metrics.</p>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6">Solve critical skills shortages with a cost-effective solution. Co-design programs targeting your exact needs. Access a
+                    pre-screened, motivated talent pool. Reduce hiring costs and improve retention by cultivating loyal team members.
+                    Strengthen your social impact and ESG metrics. Partner with EARN to build your competitive advantage from within.</p>
                 </div>
-                <div class="p-8 rounded-3xl bg-white/5 backdrop-blur-lg border border-white/10" data-aos="zoom-in" data-aos-delay="100">
+                <div class="p-8 rounded-3xl bg-white/5 backdrop-blur-lg border border-white/10" data-aos="zoom-in"
+                    data-aos-delay="100">
                     <h3 class="text-earn-accent font-bold text-xl mb-4">For Apprentices</h3>
-                    <p class="text-slate-300 text-sm leading-relaxed mb-6">Launch your career with a paid, practical learning journey. Receive financial support and formal credentials.</p>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6">Launch your career with a proven advantage. Gain in-demand skills through a paid, practical learning journey with a
+                    leading company. Receive financial and mentoring support. Earn a formal, recognized credential. Graduate with real
+                    experience, a professional network, and a direct line to employment or entrepreneurship.</p>
                 </div>
-                <div class="p-8 rounded-3xl bg-white/5 backdrop-blur-lg border border-white/10" data-aos="zoom-in" data-aos-delay="200">
+                <div class="p-8 rounded-3xl bg-white/5 backdrop-blur-lg border border-white/10" data-aos="zoom-in"
+                    data-aos-delay="200">
                     <h3 class="text-earn-accent font-bold text-xl mb-4">For Government</h3>
-                    <p class="text-slate-300 text-sm leading-relaxed mb-6">Access a scalable, private-sector-led implementation model. Align with national skills agendas and growth targets.</p>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6"> Access a scalable, private-sector-led implementation model for workforce development. Align with national skills agendas
+                    and employment targets. Leverage our ecosystem for measurable program delivery and stakeholder coordination. Collaborate
+                    on policy frameworks that incentivize employer-led training and economic growth.</p>
                 </div>
             </div>
         </div>
@@ -267,10 +885,13 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-4 gap-12 mb-16">
             <div class="col-span-2">
                 <div class="flex items-center gap-2 mb-6">
-                    <div class="w-8 h-8 bg-earn-primary rounded-lg flex items-center justify-center text-white font-bold">E</div>
+                    <div
+                        class="w-8 h-8 bg-earn-primary rounded-lg flex items-center justify-center text-white font-bold">
+                        E</div>
                     <span class="font-display font-bold text-2xl text-slate-900">EARN.Training</span>
                 </div>
-                <p class="text-slate-500 max-w-sm">Building Nigeria's workforce, through partnership. An operational alliance founded by M8 Global, IQ, and leading commercial banks.</p>
+                <p class="text-slate-500 max-w-sm">Building Nigeria's workforce, through partnership. An operational
+                    alliance founded by M8 Global, IQ, and leading commercial banks.</p>
             </div>
             <div>
                 <h4 class="font-bold text-slate-900 mb-6 uppercase tracking-widest text-xs">Engagement</h4>
@@ -295,7 +916,7 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             AOS.init({
                 duration: 800,
                 once: true,
@@ -305,4 +926,5 @@
         });
     </script>
 </body>
+
 </html>
