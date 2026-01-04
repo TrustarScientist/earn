@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | EARN.Training</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Lexend:wght@400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { earn: { dark: '#0f172a', primary: '#16a34a', accent: '#eab308', light: '#f8fafc' } },
+                    fontFamily: { sans: ['Inter', 'sans-serif'], display: ['Lexend', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-header { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); }
+        .bg-mesh {
+            background-color: #0f172a;
+            background-image: radial-gradient(at 0% 0%, rgba(22, 163, 74, 0.15) 0, transparent 50%), 
+                              radial-gradient(at 100% 100%, rgba(234, 179, 8, 0.1) 0, transparent 50%);
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 bg-white overflow-x-hidden">
+
+    <nav class="fixed w-full z-[100] glass-header border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-earn-primary rounded-lg flex items-center justify-center text-white font-bold">E</div>
+                <span class="font-display font-bold text-xl tracking-tight">EARN<span class="text-earn-primary">.Training</span></span>
+            </a>
+            <div class="hidden md:flex gap-8 items-center text-sm font-semibold">
+                <a href="index.html" class="hover:text-earn-primary transition">Home</a>
+                <a href="about.html" class="text-earn-primary">About Us</a>
+                <a href="#programs" class="hover:text-earn-primary transition">Programs</a>
+                <a href="#contact" class="bg-earn-dark text-white px-5 py-2 rounded-full hover:bg-earn-primary transition">Partner With Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-44 pb-24 bg-slate-50 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+            <div class="inline-block px-4 py-1.5 rounded-full bg-earn-primary/10 text-earn-primary text-xs font-bold uppercase tracking-[0.2em] mb-6" data-aos="fade-down">
+                Building Nigeria's Future
+            </div>
+            <h1 class="text-5xl md:text-7xl font-display font-extrabold text-slate-900 mb-8 leading-tight" data-aos="fade-up">
+                Building Nigeria's workforce, <br>
+                <span class="text-earn-primary">through partnership.</span>
+            </h1>
+            <p class="text-xl text-slate-500 max-w-3xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+                EARN is the Employers' Apprenticeship Resource Network—a definitive, private-sector-led solution to Africa’s skills challenge, launching first in Nigeria.
+            </p>
+        </div>
+        <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-earn-primary/5 rounded-full blur-3xl"></div>
+    </section>
+
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="relative" data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Consortium Meeting" class="rounded-[40px] shadow-2xl relative z-10">
+                    <div class="absolute -top-10 -left-10 w-32 h-32 bg-earn-accent/20 rounded-full blur-2xl animate-pulse"></div>
+                </div>
+                <div data-aos="fade-left">
+                    <h2 class="text-3xl font-display font-bold mb-6 text-slate-900">An Operational Alliance</h2>
+                    <p class="text-lg text-slate-600 leading-relaxed mb-8">
+                        We are an active, operational alliance of industry architects, founded by <span class="text-earn-dark font-bold underline decoration-earn-primary decoration-4">M8 Global KNOW Network</span>, <span class="text-earn-dark font-bold underline decoration-earn-primary decoration-4">Industry Qualifications Ltd (IQ)</span>, and leading commercial banks.
+                    </p>
+                    <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100">
+                        <h4 class="font-bold text-earn-primary uppercase tracking-widest text-xs mb-4">Our Powerful Premise</h4>
+                        <p class="text-slate-700 italic font-medium">
+                            "Employers, in partnership with relevant government agencies and development partners, must co-create the future workforce."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-earn-dark text-white relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-5" data-aos="fade-up">
+                    <h3 class="text-4xl font-display font-extrabold mb-8">We exist to transform how <span class="text-earn-primary">talent</span> is built.</h3>
+                    <p class="text-slate-400 text-lg mb-8">Traditional education-to-employment pipelines are fractured. EARN fixes this by providing a turnkey platform where businesses co-design, fund, and implement apprenticeship programs that deliver exact skill sets into their operations.</p>
+                </div>
+                <div class="lg:col-span-7 grid md:grid-cols-2 gap-6" data-aos="fade-left">
+                    <div class="p-8 rounded-3xl bg-white/5 border border-white/10">
+                        <div class="w-12 h-12 bg-earn-primary/20 text-earn-primary rounded-xl flex items-center justify-center mb-6 font-bold">IQ</div>
+                        <h4 class="font-bold mb-3">Rigorous Standards</h4>
+                        <p class="text-sm text-slate-400">Merging international accreditation (IQ) with industry standards.</p>
+                    </div>
+                    <div class="p-8 rounded-3xl bg-white/5 border border-white/10">
+                        <div class="w-12 h-12 bg-earn-accent/20 text-earn-accent rounded-xl flex items-center justify-center mb-6 font-bold text-xl">₦</div>
+                        <h4 class="font-bold mb-3">Financial Engineering</h4>
+                        <p class="text-sm text-slate-400">Leveraging commercial banking to fund workforce development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-display font-bold mb-16" data-aos="fade-up">The EARN Integrated Ecosystem</h2>
+            
+            
+
+            <div class="grid md:grid-cols-3 gap-8 mt-16">
+                <div class="group p-10 rounded-[40px] bg-slate-50 border border-slate-100 hover:bg-earn-primary hover:text-white transition-all duration-500 text-left" data-aos="zoom-in">
+                    <h4 class="text-2xl font-bold mb-6">The Employer</h4>
+                    <p class="text-sm leading-relaxed opacity-80 group-hover:opacity-100">Seeking a competitive, skilled pipeline. We design programs that deliver exact skill sets into your operations.</p>
+                </div>
+                <div class="group p-10 rounded-[40px] bg-slate-50 border border-slate-100 hover:bg-earn-primary hover:text-white transition-all duration-500 text-left" data-aos="zoom-in" data-aos-delay="100">
+                    <h4 class="text-2xl font-bold mb-6">The Apprentice</h4>
+                    <p class="text-sm leading-relaxed opacity-80 group-hover:opacity-100">Seeking a dignified pathway to prosperity. We provide competency-based training and mentorship frameworks.</p>
+                </div>
+                <div class="group p-10 rounded-[40px] bg-slate-50 border border-slate-100 hover:bg-earn-primary hover:text-white transition-all duration-500 text-left" data-aos="zoom-in" data-aos-delay="200">
+                    <h4 class="text-2xl font-bold mb-6">The Government</h4>
+                    <p class="text-sm leading-relaxed opacity-80 group-hover:opacity-100">Seeking a scalable model for national workforce development and economic growth via policy advocacy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-mesh text-white">
+        <div class="max-w-5xl mx-auto px-6 text-center" data-aos="fade-up">
+            <h2 class="text-3xl md:text-4xl font-display font-bold mb-8">Your Essential Partner & Operator</h2>
+            <p class="text-xl text-slate-300 leading-relaxed mb-12">
+                We manage every element to ensure reliability, quality, and measurable returns for employers, apprentices, and the nation. We move beyond dialogue to deployment.
+            </p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="#contact" class="px-10 py-5 bg-earn-primary rounded-full font-bold text-lg hover:bg-green-600 transition shadow-xl shadow-green-900/20">Contact Our Partnerships Team</a>
+                <a href="programs.html" class="px-10 py-5 bg-white/10 backdrop-blur-md rounded-full font-bold text-lg hover:bg-white/20 transition">Explore All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 bg-white border-t border-slate-100 text-center text-slate-400 text-sm">
+        <p>© 2026 EARN.Training | Building Nigeria's workforce, through partnership.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
+</body>
+</html>
